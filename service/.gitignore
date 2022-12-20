@@ -1,0 +1,24 @@
+# Build output
+bin/
+obj/
+
+# NuGet Packages
+**/packages
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# IDEs and tools
+.vs/
+*.sln
+.idea/
+.vscode/
+*.csproj.user
+
+# Environment-specific files
+appsettings.*.json
+
+# Secrets file
+secrets.json

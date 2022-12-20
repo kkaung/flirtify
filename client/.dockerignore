@@ -1,0 +1,15 @@
+node_modules
+
+dist
+
+.git 
+
+.DS_Store
+
+.env
+
+.editorconfig
+
+.angular-cli.json
+
+.nginx.conf

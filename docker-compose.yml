@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+    client:
+        build: './client'
+        ports:
+            - 4200:4200
+        volumes:
+            - ./client:/app
+    server:
+        build: './service'
+        ports:
+            - 5165:5165
+        environment:
+            PORT: 5165
+        volumes:
+            - ./services/auth/:/app/data
+volumes:
+    flirtify:

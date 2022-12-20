@@ -6,8 +6,6 @@ import { Component, Input } from '@angular/core';
 })
 export class SubmitButtonComponent {
   @Input() title!: string;
-  @Input() class!: string;
-  @Input() type!: string;
 
   constructor() {}
 }

@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgIconsModule } from '@ng-icons/core';
 import { FormsModule } from '@angular/forms';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +12,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { InputComponent } from './components/form/input/input.component';
 import { SubmitButtonComponent } from './components/form/submit-button/submit-button.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ionClose, ionMenu } from '@ng-icons/ionicons';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { ButtonComponent } from './components/button/button.component';
+import { ListsComponent } from './pages/lists/lists.component';
+import { MessagesComponent } from './pages/messages/messages.component';
+import { MatchesComponent } from './pages/matches/matches.component';
+import { SharedModule } from './shared.module';
 
 @NgModule({
   declarations: [
@@ -26,19 +29,20 @@ import { ionClose, ionMenu } from '@ng-icons/ionicons';
     FooterComponent,
     InputComponent,
     SubmitButtonComponent,
+    SettingsComponent,
+    ButtonComponent,
+    ListsComponent,
+    MessagesComponent,
+    MatchesComponent,
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgIconsModule.withIcons({
-      ionClose,
-      ionMenu,
-    }),
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-
 export class AppModule {}

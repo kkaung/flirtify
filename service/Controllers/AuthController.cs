@@ -26,7 +26,7 @@ namespace flirtify.Controllers
         public async Task<ActionResult<string>> Login(LoginUserDto user)
         {
             var response = await _service.Login(user);
-            if(response.Success) 
+            if(!response.Success) 
                 return BadRequest(response);
 
             return Ok(response);

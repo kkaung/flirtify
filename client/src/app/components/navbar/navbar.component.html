@@ -2,35 +2,55 @@
   <nav class="bg-pink-600 text-gray-100">
     <div class="container mx-auto flex justify-between items-center py-3">
       <div class="flex items-center">
-        <h1 class="text-xl italic mr-12">
+        <h1 class="text-2xl italic mr-12">
           <a routerLink="">Flirthy</a>
         </h1>
-        <ul class="hidden items-center justify-between w-[240px] sm:flex">
-          <li class="hover:text-pink-900">Matches</li>
-          <li class="hover:text-pink-900">Lists</li>
-          <li class="hover:text-pink-900">Messages</li>
-        </ul>
+        <ng-container *ngIf="isAuth">
+          <ul class="hidden items-center justify-between w-[240px] sm:flex">
+            <li class="hover:text-pink-900" routerLink="matches">Matches</li>
+            <li class="hover:text-pink-900" routerLink="lists">Lists</li>
+            <li class="hover:text-pink-900" routerLink="messages">Messages</li>
+          </ul>
+        </ng-container>
       </div>
-      <ul class="hidden items-center justify-between w-[140px] sm:flex">
-        <li class="hover:text-pink-900">
-          <a routerLink="login">Log in</a>
-        </li>
-        <li class="hover:text-pink-900"><a routerLink="signup">Sign up</a></li>
-      </ul>
+      <div class="hidden sm:block">
+        <ul
+          *ngIf="!isAuth"
+          class="items-center justify-between w-[140px] sm:flex"
+        >
+          <li class="hover:text-pink-900">
+            <a routerLink="login">Log in</a>
+          </li>
+          <li class="hover:text-pink-900">
+            <a routerLink="signup">Sign up</a>
+          </li>
+        </ul>
+        <div
+          *ngIf="isAuth"
+          class="relative flex items-center cursor-pointer"
+          (click)="onUserClick()"
+        >
+          Welcome User
+          <ng-icon
+            name="ionCaretDown"
+            class="ml-2 text-white/200 hover:text-white"
+          ></ng-icon>
+          <!-- Dropdown -->
+          <ul
+            class="absolute py-2 shadow-md bg-pink-600 -bottom-6 w-[180px] rounded translate-y-full right-0"
+            *ngIf="isAuthModal"
+          >
+            <li class="p-2" routerLink="settings">Settings</li>
+          </ul>
+        </div>
+      </div>
       <!-- Hamburger Menu -->
       <div
-        *ngIf="!isdropMenu"
-        class="flex items-center p-1 rounded-full transition hover:bg-gray-50 sm:hidden"
-        (click)="onClick()"
+        class="cursor-pointer flex items-center p-1 rounded-full transition hover:bg-white/30 sm:hidden"
+        (click)="onMenuClick()"
       >
-        <ng-icon name="ionMenu" class="text-2xl"></ng-icon>
-      </div>
-      <div
-        *ngIf="isdropMenu"
-        class="flex items-center p-1 rounded-full transition hover:bg-gray-50 sm:hidden"
-        (click)="onClick()"
-      >
-        <ng-icon name="ionClose" class="text-2xl"></ng-icon>
+        <ng-icon *ngIf="!isdropMenu" name="ionMenu" class="text-2xl"></ng-icon>
+        <ng-icon *ngIf="isdropMenu" name="ionClose" class="text-2xl"></ng-icon>
       </div>
     </div>
   </nav>
@@ -39,8 +59,13 @@
     *ngIf="isdropMenu"
     class="absolute left-0 right-0 py-2 text-white bg-pink-700 sm:hidden"
   >
-    <ul class="" *ngFor="let d of dropdownList">
-      <li class="px-[1rem] py-1 hover:bg-pink-700/70" routerLink="{{ d.link }}">
+    <ul *ngFor="let d of dropdownList">
+      <li class="px-[1rem] py-2 hover:bg-white/10" routerLink="{{ d.link }}">
+        {{ d.name }}
+      </li>
+    </ul>
+    <ul *ngFor="let d of authDropdownList">
+      <li class="px-[1rem] py-2 hover:bg-white/10" routerLink="{{ d.link }}">
         {{ d.name }}
       </li>
     </ul>

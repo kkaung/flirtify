@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { ListsComponent } from './pages/lists/lists.component';
 import { LoginComponent } from './pages/login/login.component';
+import { MatchesComponent } from './pages/matches/matches.component';
+import { MessagesComponent } from './pages/messages/messages.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 import { SignupComponent } from './pages/signup/signup.component';
 
 const routes: Routes = [
@@ -16,6 +20,22 @@ const routes: Routes = [
   {
     path: 'signup',
     component: SignupComponent,
+  },
+  {
+    path: 'settings',
+    component: SettingsComponent,
+  },
+  {
+    path: 'matches',
+    component: MatchesComponent,
+  },
+  {
+    path: 'lists',
+    component: ListsComponent,
+  },
+  {
+    path: 'messages',
+    component: MessagesComponent,
   },
 ];
 
