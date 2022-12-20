@@ -1,0 +1,36 @@
+<div class="flex justify-center mt-14">
+  <form class="max-w-[360px]">
+    <h1 class="italic text-xl mb-4 underline text-pink-500">Registration</h1>
+    <input
+      type="text"
+      (username)="(username)"
+      placeholder="Enter your username"
+      class="px-4 py-[6px] w-full rounded-md border border-gray-300/50 outline-pink-600 placeholder:font-light"
+    />
+    <input
+      type="text"
+      placeholder="Enter your email"
+      class="my-5 px-4 py-[6px] w-full rounded-md border border-gray-300/50 outline-pink-600 placeholder:font-light"
+    />
+    <input
+      type="text"
+      placeholder="Enter your password"
+      class="px-4 py-[6px] w-full rounded-md border border-gray-300/50 outline-pink-600 placeholder:font-light"
+    />
+    <button
+      type="submit"
+      class="bg-pink-600 text-white w-full py-[6px] rounded-md mt-5 hover:bg-pink-500"
+      (click)="onSubmit()"
+    >
+      Register Now
+    </button>
+    <p class="text-sm text-center mt-4">
+      Already have an account?
+      <a
+        routerLink="/login"
+        class="italic text-pink-600 hover:underline hover:text-pink-500"
+        >Login now</a
+      >
+    </p>
+  </form>
+</div>

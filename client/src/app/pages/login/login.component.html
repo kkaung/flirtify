@@ -1,0 +1,24 @@
+<div class="flex justify-center mt-14">
+  <form class="w-full max-w-[360px]" (submit)="login()" autocomplete="off">
+    <h1 class="italic text-xl mb-4 underline text-pink-500">Login</h1>
+    <app-input
+      [value]="email"
+      placeholder="Enter your email"
+      type="email"
+    ></app-input>
+    <app-input
+      [value]="password"
+      placeholder="Enter your password"
+      type="password"
+    ></app-input>
+    <app-submit-button title="Login"></app-submit-button>
+    <p class="text-sm text-center mt-4">
+      Haven't have an account?
+      <a
+        routerLink="/signup"
+        class="italic text-pink-600 hover:underline hover:text-pink-500"
+        >Register now</a
+      >
+    </p>
+  </form>
+</div>
