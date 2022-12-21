@@ -1,5 +1,6 @@
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/appsettings.Development.json
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/appsettings.json
+/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Data/UserSeed.json
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/service
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/service.deps.json
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/service.runtimeconfig.json
@@ -16,6 +17,10 @@
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Sqlite.dll
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.OpenApi.dll
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/SQLitePCLRaw.batteries_v2.dll
@@ -25,6 +30,7 @@
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/System.CodeDom.dll
+/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/runtimes/alpine-arm/native/libe_sqlite3.so
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/runtimes/alpine-arm64/native/libe_sqlite3.so
 /Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/runtimes/alpine-x64/native/libe_sqlite3.so
@@ -68,8 +74,3 @@
 /Users/moongoblin/Documents/Developments/Flirtify/service/obj/Debug/net7.0/service.pdb
 /Users/moongoblin/Documents/Developments/Flirtify/service/obj/Debug/net7.0/service.genruntimeconfig.cache
 /Users/moongoblin/Documents/Developments/Flirtify/service/obj/Debug/net7.0/ref/service.dll
-/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
-/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
-/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
-/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
-/Users/moongoblin/Documents/Developments/Flirtify/service/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

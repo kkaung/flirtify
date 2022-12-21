@@ -5,6 +5,7 @@ global using flirtify.Models;
 global using flirtify.Services;
 global using flirtify.Dtos;
 global using flirtify.Data;
+global using flirtify.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 

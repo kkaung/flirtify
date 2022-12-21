@@ -7,6 +7,7 @@ import { MatchesComponent } from './pages/matches/matches.component';
 import { MessagesComponent } from './pages/messages/messages.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { UserDetailsComponent } from './pages/user-details/user-details.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'messages',
     component: MessagesComponent,
+  },
+  {
+    path: ':id',
+    component: UserDetailsComponent,
   },
 ];
 

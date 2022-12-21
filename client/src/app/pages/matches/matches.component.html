@@ -1,1 +1,35 @@
-<p>matches works!</p>
+<div>
+  <header class="mb-6 flex items-center justify-between text-sm md:text-md">
+    <div class="flex items-center">
+      Age from <input value="18" class="w-[50px]" /> to
+      <input value="99" class="w-[50px]" />
+    </div>
+    <div>
+      Show
+      <select class="outline-pink-600 cursor-pointer">
+        <option value="female">Females</option>
+        <option value="male">Males</option>
+      </select>
+    </div>
+    <div class="flex items-center">
+      <button class="bg-pink-500 text-white py-[5px] px-3 rounded">
+        Apply
+      </button>
+      <button class="bg-pink-500 text-white py-[5px] px-3 rounded">
+        Reset
+      </button>
+    </div>
+    <div class="flex items-center">
+      <button class="bg-pink-500 text-white py-[5px] px-3 rounded">
+        Last Active
+      </button>
+      <button class="bg-pink-500 text-white py-[5px] px-3 rounded">News</button>
+    </div>
+  </header>
+  <!-- Body -->
+  <div class="flex flex-wrap">
+    <div *ngFor="let user of users">
+      <app-user-card [user]="user"></app-user-card>
+    </div>
+  </div>
+</div>

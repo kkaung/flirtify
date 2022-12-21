@@ -1,4 +1,4 @@
-namespace flirtify
+namespace flirtify.Helpers
 {
     public class AutoMapperProfile : Profile
     {

@@ -6,4 +6,14 @@
   li {
     cursor: pointer;
   }
+
+  body {
+    @apply text-black/70;
+  }
+}
+
+@layer components {
+  .f-border {
+    @apply border border-gray-300/50;
+  }
 }

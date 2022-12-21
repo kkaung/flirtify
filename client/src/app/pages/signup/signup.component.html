@@ -1,29 +1,28 @@
 <div class="flex justify-center mt-14">
-  <form class="max-w-[360px]">
-    <h1 class="italic text-xl mb-4 underline text-pink-500">Registration</h1>
-    <input
-      type="text"
-      (username)="(username)"
-      placeholder="Enter your username"
-      class="px-4 py-[6px] w-full rounded-md border border-gray-300/50 outline-pink-600 placeholder:font-light"
-    />
-    <input
-      type="text"
-      placeholder="Enter your email"
-      class="my-5 px-4 py-[6px] w-full rounded-md border border-gray-300/50 outline-pink-600 placeholder:font-light"
-    />
-    <input
-      type="text"
-      placeholder="Enter your password"
-      class="px-4 py-[6px] w-full rounded-md border border-gray-300/50 outline-pink-600 placeholder:font-light"
-    />
-    <button
-      type="submit"
-      class="bg-pink-600 text-white w-full py-[6px] rounded-md mt-5 hover:bg-pink-500"
+  <form class="max-w-[360px] w-full">
+    <h1 class="italic text-2xl mb-4 underline text-pink-500">Registration</h1>
+    <div class="flex items-center mb-2">
+      Gender:
+      <div class="mx-3">
+        <input type="checkbox" value="male" class="mr-1" />
+        <label>Male</label>
+      </div>
+      <div>
+        <input type="checkbox" value="female" class="mr-1" />
+        <label>Female</label>
+      </div>
+    </div>
+    <app-input placeholder="Username"></app-input>
+    <app-input type="email" placeholder="Email"></app-input>
+    <app-input placeholder="Known As"></app-input>
+    <app-input type="date" placeholder="Date Of Birth"> </app-input>
+    <app-input placeholder="City"></app-input>
+    <app-input type="password" placeholder="Password"></app-input>
+    <app-input type="password" placeholder="Confirm Password"> </app-input>
+    <app-submit-button
+      title="Register Now"
       (click)="onSubmit()"
-    >
-      Register Now
-    </button>
+    ></app-submit-button>
     <p class="text-sm text-center mt-4">
       Already have an account?
       <a

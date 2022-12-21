@@ -5,10 +5,10 @@ import { Component, Input } from '@angular/core';
   templateUrl: './input.component.html',
 })
 export class InputComponent {
-  @Input() type!: string;
-  @Input() class!: string;
   @Input() placeholder!: string;
-  @Input() value!: string;
+  @Input() class!: string;
+  @Input() value = null;
+  @Input() type!: string;
 
   constructor() {}
 }

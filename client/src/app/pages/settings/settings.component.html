@@ -1,9 +1,56 @@
-<p>
-  <button
-    type="button"
-    class="bg-pink-600 text-white px-4 py-[5px] rounded hover:"
-    (click)="logout()"
-  >
-    Logout
-  </button>
-</p>
+<div class="flex space-x-6">
+  <div class="text-sm">
+    <div class="p-4 border rounded w-[190px] space-y-3">
+      <img
+        src="https://i0.wp.com/meetthepressmasterclass.com.au/wp-content/uploads/default-user-image.png?ssl=1"
+        class="w-full h-[160px] rounded"
+      />
+      <div>
+        <div class="text-black/90">Location</div>
+        <div class="text-xs">London,UK</div>
+      </div>
+      <div>
+        <div class="text-black/90">Last Active:</div>
+        <div class="text-xs">5 sec ago</div>
+      </div>
+      <div>
+        <div class="text-black/90">Created at:</div>
+        <div class="text-xs">22 Sep 2020</div>
+      </div>
+      <button class="bg-green-600/80 text-white w-full py-1 rounded">
+        Save
+      </button>
+    </div>
+    <button
+      type="button"
+      class="mt-6 w-full bg-pink-600 text-white px-4 py-[5px] rounded"
+      (click)="logout()"
+    >
+      Logout
+    </button>
+  </div>
+  <div class="flex-1">
+    <div>
+      <div>
+        <button>About bob</button>
+        <button>Edit photos</button>
+      </div>
+      <div>
+        <label></label>
+        <app-textarea></app-textarea>
+      </div>
+      <div>
+        <label>Looking for</label>
+        <app-textarea></app-textarea>
+      </div>
+      <div>
+        <label>Interests</label>
+        <app-textarea></app-textarea>
+      </div>
+      <div>
+        <label>Interests</label>
+        <app-textarea></app-textarea>
+      </div>
+    </div>
+  </div>
+</div>

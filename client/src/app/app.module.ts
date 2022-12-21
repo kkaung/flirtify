@@ -18,6 +18,9 @@ import { ListsComponent } from './pages/lists/lists.component';
 import { MessagesComponent } from './pages/messages/messages.component';
 import { MatchesComponent } from './pages/matches/matches.component';
 import { SharedModule } from './shared.module';
+import { UserCardComponent } from './components/user-card/user-card.component';
+import { UserDetailsComponent } from './pages/user-details/user-details.component';
+import { TextareaComponent } from './components/form/textarea/textarea.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,12 @@ import { SharedModule } from './shared.module';
     ListsComponent,
     MessagesComponent,
     MatchesComponent,
+    UserCardComponent,
+    UserDetailsComponent,
+    TextareaComponent,
   ],
+  providers: [],
+  bootstrap: [AppComponent],
   imports: [
     FormsModule,
     BrowserModule,
@@ -42,7 +50,5 @@ import { SharedModule } from './shared.module';
     HttpClientModule,
     SharedModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}
